@@ -1,0 +1,2250 @@
+/**********************************************************CUSTOM CSS**********************************************************/
+
+input.error {
+    border: 1px solid red;
+}
+
+.dataTables_wrapper>.row> :nth-child(2) {
+    margin-bottom: 15px;
+}
+
+.custom-control-label::after,
+.custom-radio .custom-control-label::before,
+.custom-radio .custom-control-input:checked~.custom-control-label::before,
+.custom-radio .custom-control-input:checked~.custom-control-label::after,
+.custom-checkbox .custom-control-label::before,
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before,
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    top: 2px;
+}
+
+.login-alert .alert {
+    padding: 20px;
+    background-color: #f44336;
+    /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+
+/* The close button */
+
+.login-alert .alert .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* When moving the mouse over the close button */
+
+.login-alert .alert .closebtn:hover {
+    color: black;
+}
+
+.container-fluid .col-lg-6.alert {
+    padding: 0 15px;
+}
+
+.custom-alert .alert-dismissible .close {
+    top: 13% !important;
+}
+
+table tr form a.btn {
+    color: #fff !important;
+}
+
+.active-language {
+    background-color: #f6f9fc;
+}
+
+#toast-container .toast {
+    width: 320px !important;
+}
+
+.min-vh-78 {
+    min-height: 78vh !important;
+}
+
+.min-vh-66 {
+    min-height: 66vh !important;
+}
+
+td.td-white-space {
+    white-space: unset;
+}
+
+td.td-white-space .badge {
+    text-transform: unset;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.profile-image {
+    width: 25%;
+}
+
+.media .avatar img {
+    height: inherit;
+}
+
+#site-setting .form-group img.dashboardlogo,
+#site-setting .form-group img.defaultlogo {
+    width: 38%;
+}
+
+#site-setting .form-group img.dashboardlogo,
+#site-setting .form-group img.defaultlogo,
+#site-setting .form-group img.favicon {
+    color: #212529;
+    border-color: #f7fafc;
+    background-color: #f7fafc;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+}
+
+#site-setting .form-group img.favicon {
+    width: 10%;
+}
+
+.product-card .product-img-container {
+    height: 170px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*#product-listing .card-title {
+    min-height: 38px;
+    max-height: 38px;
+}*/
+
+#product-listing .toacart {
+    cursor: pointer;
+}
+
+table.carttable.fixed {
+    table-layout: fixed;
+}
+
+table.carttable.fixed tbody {
+    position: relative;
+}
+
+table.carttable.fixed th.price {
+    width: 14%;
+}
+
+table.carttable.fixed th.pname {
+    width: 24%;
+}
+
+table.carttable.fixed th.tax {
+    width: 10%;
+}
+
+table.carttable.fixed th.subtotal {
+    width: 0;
+}
+
+table.carttable.fixed td.productname {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+table.carttable.fixed td.actions i {
+    position: absolute;
+    right: 30px;
+}
+
+.actions .remove-items {
+    cursor: pointer;
+}
+
+
+/* -- quantity box -- */
+
+.carttable .quantity .input-number {
+    width: 35px;
+    height: 35px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #efefef;
+}
+
+.carttable .quantity.buttons_added {
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.carttable .quantity.buttons_added input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: none;
+}
+
+.carttable .quantity.buttons_added .minus,
+.carttable .quantity.buttons_added .plus {
+    padding: 4px 10px 8px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    cursor: pointer;
+}
+
+.carttable .quantity.buttons_added .minus {
+    border-right: 0;
+}
+
+.carttable .quantity.buttons_added .plus {
+    border-left: 0;
+}
+
+.carttable .quantity.buttons_added .minus:hover,
+.carttable .quantity.buttons_added .plus:hover {
+    background: #eeeeee;
+}
+
+.carttable .quantity input::-webkit-outer-spin-button,
+.carttable .quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+}
+
+.carttable .quantity.buttons_added .minus:focus,
+.carttable .quantity.buttons_added .plus:focus {
+    outline: none;
+}
+
+
+/*INVOICE CSS*/
+
+.invoice .company-details {
+    text-align: right;
+    max-width: 50%;
+    float: right;
+}
+
+.invoice .company-details .name {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.invoice .company-details .address {
+    /*max-width: 50%;*/
+    word-wrap: break-word;
+    float: right;
+}
+
+.invoice .contacts {
+    margin-bottom: 20px
+}
+
+.invoice .invoice-to {
+    text-align: left;
+    text-transform: capitalize;
+    max-width: 50%;
+    float: left;
+}
+
+.invoice .invoice-to .to {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.invoice .invoice-details {
+    text-align: right;
+    float: right;
+}
+
+.invoice .invoice-details .invoice-id {
+    margin-top: 0;
+    color: #3989c6
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
+}
+
+
+/*SCROLL BAR*/
+
+.scrollbar {
+    float: left;
+    height: 700px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    margin-bottom: 25px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+    background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+.todo-scrollbar {
+    float: left;
+    height: 574px;
+    width: 100%;
+    overflow: auto;
+}
+
+.todo-scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.todo-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.todo-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #5e71e4;
+}
+
+
+/*CIRCULAR PROGRESSBAR*/
+
+.circular-progressbar .flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.circular-progressbar .single-chart {
+    width: 25%;
+    justify-content: space-around;
+}
+
+.circular-progressbar .circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 70%;
+    max-height: 250px;
+}
+
+.circular-progressbar .circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+}
+
+.circular-progressbar .circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.circular-progressbar .circular-chart.red .circle {
+    stroke: #ff0000;
+}
+
+.circular-progressbar .circular-chart.orange .circle {
+    stroke: #ff9f00;
+}
+
+.circular-progressbar .circular-chart.green .circle {
+    stroke: #4CC790;
+}
+
+.circular-progressbar .circular-chart.blue .circle {
+    stroke: #3c9ee5;
+}
+
+.circular-progressbar .percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+}
+
+.plan-div .plan-item {
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 18px;
+    box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.08);
+    position: relative;
+    margin-bottom: 30px;
+    transition: all ease 0.35s;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+    min-height: 370px;
+}
+
+.plan-div .plan-item .img-wrap {
+    max-width: 150px;
+    margin: 0 auto;
+    min-height: 150px;
+}
+
+.plan-div .plan-item .img-wrap img {
+    width: 100%;
+}
+
+.plan-div h4 {
+    background: #011c4b;
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+.plan-div .plan-item h3 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 15px 0;
+    line-height: normal;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-div .plan-item h3 sup.price-sign {
+    top: inherit;
+    display: inline-block;
+    line-height: normal;
+}
+
+.plan-div .plan-item ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan-div .plan-item ul li {
+    width: 100%;
+}
+
+.plan-div .plan-item ul li+li {
+    border-left: 1px solid #e9ebff;
+}
+
+.plan-div .plan-item ul li i {
+    color: #94a4d4;
+}
+
+.plan-div .plan-item ul li p {
+    line-height: normal;
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.plan-div .plan-item h3+p {
+    margin-bottom: 0;
+}
+
+.plan-div .plan-item .text-centers {
+    padding: 4px 20px;
+    margin: 20px 0 20px;
+}
+
+.plan-div .plan-item .text-centers .btn-outline-success:hover i {
+    color: #fff !important;
+}
+
+.plan-div .plan-item a.view-btn {
+    display: inline-block;
+    border-radius: 100px;
+}
+
+#repeaterform .input-group-btn {
+    margin: auto;
+    padding-left: 10px;
+}
+
+#repeaterform .repeater:not(:first-of-type) {
+    margin-top: 10px;
+}
+
+#expense-table_wrapper .dt-buttons,
+#expense-table_wrapper .dataTables_info {
+    float: left;
+    margin-bottom: 20px;
+}
+
+#expense-table_wrapper .dataTables_paginate {
+    float: right;
+}
+
+.bg-f5f7f9 {
+    background-color: #f5f7f9 !important;
+}
+
+.select-warning,
+.branch-warning {
+    display: none;
+}
+
+.branch-warning .alert-icon {
+    float: left;
+}
+
+.branch-warning .alert-text a {
+    color: #fff;
+}
+
+.branch-warning .alert-text a:hover {
+    color: #000;
+}
+
+.toacart .card .price span {
+    display: block;
+}
+
+.cart-product-list span.name {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.cart-product-list span.price,
+.cart-product-list span.subtotal,
+.cart-product-list .action i,
+.cart-product-list span.tax {
+    font-size: 11px;
+}
+
+.cart-product-list .action i {
+    cursor: pointer;
+}
+
+.card-body.carttable.cart-product-list {
+    padding: 0 15px;
+}
+
+.mt-59 {
+    margin-top: 59px;
+}
+
+.table.dataTable tbody tr td p.expense_note {
+    font-size: .8125rem;
+    margin-bottom: 0;
+    word-break: break-all;
+    white-space: normal;
+}
+
+.stripe-payment-div #card-element {
+    border: 1px solid #e4e6fc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#my-profile .focused .form-control,
+#my-profile .focused .input-group-text {
+    border-color: #dee2e6;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.pooup-plan-list a.avatar {
+    background: none;
+}
+
+.pooup-plan-list .media-items {
+    display: flex;
+    font-size: 13px;
+}
+
+.pooup-plan-list .media-items .active-label {
+    color: #2dce89;
+}
+
+.pooup-plan-list .media-items .media-item:last-child {
+    width: 150px;
+}
+
+.pooup-plan-list .media-items .media-item {
+    flex: 1;
+    text-align: center;
+    padding: 0 15px;
+    align-self: center;
+}
+
+.payment-status.dropdown-menu {
+    min-width: 10rem;
+}
+
+.display-payment {
+    text-align: center;
+}
+
+.display-payment .payment-label {
+    min-width: 103px;
+    transform: translateY(1px);
+    color: #fff;
+    border-radius: .25rem;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+}
+
+.display-payment .payment-label.unpaid {
+    border-color: #f5365c;
+    background-color: #f5365c;
+}
+
+.display-payment .payment-label.partially-paid {
+    border-color: #fb6340;
+    background-color: #fb6340;
+}
+
+.display-payment .payment-label.paid {
+    border-color: #2dce89;
+    background-color: #2dce89;
+}
+
+.display-payment .payment-status .payment-actions a.payment-action {
+    border-radius: 0;
+    margin: 3px 0;
+}
+
+.display-payment .payment-status .payment-actions a.payment-action:active {
+    background: #fff;
+    color: #778CA2 !important;
+}
+
+.display-payment .payment-status .payment-actions a.payment-action.selected {
+    border-left: 4px solid #4D7CFE;
+    background-color: #f8f9fa;
+    outline: none;
+}
+
+.display-quotation .quotation-status .quotation-actions a.quotation-action {
+    border-radius: 0;
+    margin: 3px 0;
+}
+
+.display-quotation .quotation-status .quotation-actions a.quotation-action:active {
+    background: #fff;
+    color: #778CA2 !important;
+}
+
+.display-quotation .quotation-status .quotation-actions a.quotation-action.selected {
+    border-left: 4px solid #4D7CFE;
+    background-color: #f8f9fa;
+    outline: none;
+}
+
+.display-quotation {
+    text-align: center;
+}
+
+.display-quotation .quotation-label {
+    min-width: 50px;
+    transform: translateY(1px);
+    color: #fff;
+    border-radius: .25rem;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+}
+
+.display-quotation .quotation-label.quotation-open {
+    border-color: #2dce89;
+    background-color: #2dce89;
+}
+
+.display-quotation .quotation-label.quotation-close {
+    border-color: #f5365c;
+    background-color: #f5365c;
+}
+
+.display-notification .notification-status .notification-actions a.notification-action {
+    border-radius: 0;
+    margin: 3px 0;
+}
+
+.display-notification .notification-status .notification-actions a.notification-action:active {
+    background: #fff;
+    color: #778CA2 !important;
+}
+
+.display-notification .notification-status .notification-actions a.notification-action.selected {
+    border-left: 4px solid #4D7CFE;
+    background-color: #f8f9fa;
+    outline: none;
+}
+
+.display-notification {
+    text-align: center;
+}
+
+.display-notification .notification-label {
+    min-width: 50px;
+    transform: translateY(1px);
+    color: #fff;
+    border-radius: .25rem;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+}
+
+.display-notification .notification-label.notification-open {
+    border-color: #2dce89;
+    background-color: #2dce89;
+}
+
+.display-notification .notification-label.notification-close {
+    border-color: #f5365c;
+    background-color: #f5365c;
+}
+
+.gutters-xs {
+    margin-right: -0.25rem;
+    margin-left: -0.25rem;
+}
+
+.gutters-xs>.col,
+.gutters-xs>[class*="col-"] {
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+}
+
+.colorinput {
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.colorinput-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.colorinput-color {
+    background-color: #fdfdff;
+    border-color: #e4e6fc;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 3px;
+    color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.colorinput-color:before {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    top: .25rem;
+    left: .25rem;
+    height: 1.25rem;
+    width: 1.25rem;
+    transition: .3s opacity;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E") no-repeat center center/50% 50%;
+}
+
+.colorinput-input:checked~.colorinput-color:before {
+    opacity: 1;
+}
+
+.h-1050 {
+    height: 1050px !important;
+}
+
+.custom-toggle-btn {
+    float: left;
+}
+
+.custom-toggle-btn:not(:last-child) {
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.selectgroup {
+    display: flex;
+}
+
+.selectgroup-item {
+    flex-grow: 1;
+    position: relative;
+}
+
+.selectgroup-input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.selectgroup-input:focus+.selectgroup-button,
+.selectgroup-input:checked+.selectgroup-button {
+    background-color: #5e72e4;
+    color: #fff;
+    z-index: 1;
+}
+
+.selectgroup-item:not(:last-child) .selectgroup-button {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.selectgroup-button {
+    background-color: #fdfdff;
+    border-color: #e4e6fc;
+    border-width: 1px;
+    border-style: solid;
+    display: block;
+    text-align: center;
+    padding: 0 1rem;
+    height: 35px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 13px;
+    min-width: 2.375rem;
+    line-height: 36px;
+}
+
+.plan-div .nav-pills .nav-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.apply-stripe-btn-coupon {
+    margin-top: 3.6rem;
+}
+
+.apply-paypal-btn-coupon {
+    margin-top: 2.1rem;
+}
+
+label#email_sending {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+
+/* Products purchases & sale*/
+
+.form-row>.zoom-in {
+    transition-property: background-color, border-color, color, fill, opacity, box-shadow, transform;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    --transform-translate-x: 0;
+    --transform-translate-y: 0;
+    --transform-rotate: 0;
+    --transform-skew-x: 0;
+    --transform-skew-y: 0;
+    --transform-scale-x: 1;
+    --transform-scale-y: 1;
+    transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+    cursor: pointer;
+    margin-bottom: 10px !important
+}
+
+.zoom-in:hover {
+    --transform-scale-x: 1.05;
+    --transform-scale-y: 1.05;
+}
+
+.card.card-stats.mb-0.cat-active {
+    background: #051c4b;
+}
+
+.card-body.bg-f5f7f9.b-bottom {
+    border-bottom: 1px solid #eee;
+}
+
+.category-select>.row>.col>.product-count {
+    font-size: 12px;
+}
+
+.product-body-nop {
+    padding-top: 10px !important;
+    padding-bottom: 0px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.catgory-pad {
+    padding-top: 10px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-bottom: 0px !important;
+}
+
+.img-pad {
+    padding: 0px !important;
+}
+
+.cart-product-list>.mt-3:last-child {
+    padding-bottom: 20px;
+}
+
+.product_tbl .card .table td,
+.card .table th {
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+}
+
+.mddd.nav-link:hover,
+.mddd.nav-link,
+.mddd.nav-link.active {
+    color: #051C4B !important;
+}
+
+.view-icon i,
+.edit-icon i,
+.delete-icon i,
+.send-icon i {
+    color: #fff;
+    font-size: 10px;
+    line-height: 25px;
+}
+
+.view-icon,
+.edit-icon,
+.delete-icon {
+    background: #ef3939;
+    border-radius: 6px;
+    width: 25px;
+    line-height: 25px;
+    height: 25px;
+    text-align: center;
+    padding: 3px 7px;
+}
+
+.view-icon {
+    margin-right: 6px;
+    background: #46b8da;
+}
+
+.edit-icon,
+.send-icon {
+    margin-right: 6px;
+    background: #0f5ef7;
+}
+
+.send-icon {
+    float: left;
+    background: #00B8D9;
+    border-radius: 6px;
+    width: 25px;
+    line-height: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+.bg-255ef7 {
+    background-color: #255ef7;
+}
+
+.product_barcode_hight_de div {
+    height: 20px !important;
+}
+
+.select-warning {
+    display: block;
+    text-align: center;
+    background: #ffab2b1a;
+    color: #FFAB2B;
+    font-size: 13px;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+.select2-container .select2-search {
+    display: none;
+}
+
+.select2-container .select2-selection--single {
+    border-radius: 0.25rem;
+    height: 40px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 18px;
+}
+
+.calendar-table table tbody tr td,
+.calendar-table table thead tr th {
+    padding: 5px;
+}
+
+.calendar td,
+.calendar th {
+    border-color: #f6f8fa;
+}
+
+.calendar-table table {
+    margin-bottom: 0 !important;
+}
+
+.daterangepicker td.active {
+    background: #0f5ef7;
+}
+
+.daterangepicker.dropdown-menu {
+    z-index: 99999 !important;
+}
+
+.search_vendor_merge_input .form-control,
+.search_vendor_merge_input .form-control {
+    height: 42px;
+}
+
+.search_vendor_merge_input .input-group-text {
+    padding: 0 15px;
+}
+
+.custom-file-label1 {
+    background-color: #255EF7;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 15px;
+    border-radius: 5px;
+}
+
+
+/* **********
+    new css
+********** */
+
+.view-icon i,
+.edit-icon i,
+.delete-icon i,
+.send-icon i {
+    color: #fff;
+    font-size: 10px;
+    line-height: 25px;
+}
+
+.view-icon,
+.edit-icon,
+.delete-icon {
+    background: #ef3939;
+    border-radius: 6px;
+    width: 25px;
+    line-height: 25px;
+    height: 25px;
+    text-align: center;
+    padding: 3px 7px;
+}
+
+.view-icon {
+    margin-right: 6px;
+    background: #46b8da;
+}
+
+.edit-icon,
+.send-icon {
+    margin-right: 6px;
+    background: #0f5ef7;
+}
+
+.send-icon {
+    float: left;
+    background: #00B8D9;
+    border-radius: 6px;
+    width: 25px;
+    line-height: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+.bg-255ef7 {
+    background-color: #255ef7;
+}
+
+.product_barcode_hight_de div {
+    height: 20px !important;
+}
+
+.select-warning {
+    display: block;
+    text-align: center;
+    background: #ffab2b1a;
+    color: #FFAB2B;
+    font-size: 13px;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+.select2-container .select2-search {
+    display: none;
+}
+
+.select2-container .select2-selection--single {
+    border-radius: 0.25rem;
+    height: 40px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 18px;
+}
+
+.calendar-table table tbody tr td,
+.calendar-table table thead tr th {
+    padding: 5px;
+}
+
+.calendar td,
+.calendar th {
+    border-color: #f6f8fa;
+}
+
+.calendar-table table {
+    margin-bottom: 0 !important;
+}
+
+.daterangepicker td.active {
+    background: #0f5ef7;
+}
+
+.daterangepicker.dropdown-menu {
+    z-index: 99999 !important;
+}
+
+.search_vendor_merge_input .form-control,
+.search_vendor_merge_input .form-control {
+    height: 42px;
+}
+
+.search_vendor_merge_input .input-group-text {
+    padding: 0 15px;
+}
+
+.custom-file-label1 {
+    background-color: #255EF7;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 15px;
+    border-radius: 5px;
+}
+
+.nav.nav-tabs li a {
+    font-weight: bold;
+    color: #0f5ef7;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.nav.nav-tabs {
+    border: 1px solid #0f5ef7;
+    border-radius: 10px;
+}
+
+.nav.nav-tabs li a.active {
+    background: #0f5ef7;
+    color: white;
+}
+
+.language-listt .nav-link.active {
+    background-color: #0f5ef7;
+    color: #fff;
+}
+
+.small-title {
+    padding: 15px;
+    border: 15px;
+    font-size: 20px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 49px rgba(105, 105, 105, 0.09);
+}
+
+.logo-content {
+    background: #eaeaea94;
+    border-radius: 20px;
+    padding: 15px 30px;
+    height: 100px;
+}
+
+.big-logo,
+.small-logo,
+.logo_white_favicone {
+    max-height: 72px;
+}
+
+.card.setting-card {
+    padding: 30px 15px;
+}
+
+.setting-logo-box {
+    min-height: 258px !important;
+}
+
+.img_setting {
+    filter: drop-shadow(2px 3px 7px #011c4b);
+}
+
+.bg-grey {
+    background-color: #f1f1f12e;
+}
+
+.calendar_boder_radias {
+    background-color: #051c4b;
+    border-radius: 5px;
+}
+
+.dataTable {
+    width: 99% !important;
+}
+
+.nav-link:hover {
+    color: inherit !important;
+}
+
+.checklist-item {
+    position: relative;
+    display: flex;
+    padding-left: .75rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checklist-item:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    content: '';
+    border-radius: 8px;
+    background-color: #5e72e4;
+}
+
+.checklist-item-checked .checklist-info * {
+    text-decoration: line-through;
+}
+
+.checklist-item-primary:before {
+    background-color: #5e72e4;
+}
+
+.checklist-item-secondary:before {
+    background-color: #f7fafc;
+}
+
+.checklist-item-success:before {
+    background-color: #2dce89;
+}
+
+.checklist-item-info:before {
+    background-color: #11cdef;
+}
+
+.checklist-item-warning:before {
+    background-color: #fb6340;
+}
+
+.checklist-item-danger:before {
+    background-color: #f5365c;
+}
+
+.checklist-item-light:before {
+    background-color: #adb5bd;
+}
+
+.checklist-item-dark:before {
+    background-color: #212529;
+}
+
+.checklist-item-default:before {
+    background-color: #172b4d;
+}
+
+.checklist-item-white:before {
+    background-color: #fff;
+}
+
+.checklist-item-neutral:before {
+    background-color: #fff;
+}
+
+.checklist-item-darker:before {
+    background-color: black;
+}
+
+.bg-255ef7 {
+    background-color: #255ef7;
+}
+
+.bg-grey {
+    background-color: #f1f1f12e;
+}
+
+.datepicker {
+    border-radius: .375rem;
+    direction: ltr;
+}
+
+.datepicker-inline {
+    width: 220px;
+}
+
+.datepicker-rtl {
+    direction: rtl;
+}
+
+.datepicker-rtl.dropdown-menu {
+    left: auto;
+}
+
+.datepicker-rtl table tr td span {
+    float: right;
+}
+
+.datepicker-dropdown {
+    top: 0;
+    left: 0;
+    padding: 20px 22px;
+    box-shadow: 0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1);
+}
+
+.datepicker-dropdown.datepicker-orient-left:before {
+    left: 6px;
+}
+
+.datepicker-dropdown.datepicker-orient-left:after {
+    left: 7px;
+}
+
+.datepicker-dropdown.datepicker-orient-right:before {
+    right: 6px;
+}
+
+.datepicker-dropdown.datepicker-orient-right:after {
+    right: 7px;
+}
+
+.datepicker-dropdown.datepicker-orient-bottom:before {
+    top: -7px;
+}
+
+.datepicker-dropdown.datepicker-orient-bottom:after {
+    top: -6px;
+}
+
+.datepicker-dropdown.datepicker-orient-top:before {
+    bottom: -7px;
+    border-top: 7px solid white;
+    border-bottom: 0;
+}
+
+.datepicker-dropdown.datepicker-orient-top:after {
+    bottom: -6px;
+    border-top: 6px solid #fff;
+    border-bottom: 0;
+}
+
+.datepicker table {
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.datepicker table tr td {
+    border-radius: 50%;
+}
+
+.datepicker table tr th {
+    font-weight: 500;
+    border-radius: .375rem;
+}
+
+.datepicker table tr td,
+.datepicker table tr th {
+    font-size: .875rem;
+    width: 36px;
+    height: 36px;
+    transition: all .15s ease;
+    text-align: center;
+    border: none;
+}
+
+.table-striped .datepicker table tr td,
+.table-striped .datepicker table tr th {
+    background-color: transparent;
+}
+
+.datepicker table tr td.old,
+.datepicker table tr td.new {
+    color: #adb5bd;
+}
+
+.datepicker table tr td.day:hover,
+.datepicker table tr td.focused {
+    cursor: pointer;
+    background: white;
+}
+
+.datepicker table tr td.disabled,
+.datepicker table tr td.disabled:hover {
+    cursor: default;
+    color: #dee2e6;
+    background: none;
+}
+
+.datepicker table tr td.highlighted {
+    border-radius: 0;
+}
+
+.datepicker table tr td.highlighted.focused {
+    background: #5e72e4;
+}
+
+.datepicker table tr td.highlighted.disabled,
+.datepicker table tr td.highlighted.disabled:active {
+    color: #ced4da;
+    background: #5e72e4;
+}
+
+.datepicker table tr td.today {
+    background: white;
+}
+
+.datepicker table tr td.today.focused {
+    background: white;
+}
+
+.datepicker table tr td.today.disabled,
+.datepicker table tr td.today.disabled:active {
+    color: #8898aa;
+    background: white;
+}
+
+.datepicker table tr td.range {
+    color: #fff;
+    border-radius: 0;
+    background: #5e72e4;
+}
+
+.datepicker table tr td.range.focused {
+    background: #3b53de;
+}
+
+.datepicker table tr td.range.disabled,
+.datepicker table tr td.range.disabled:active,
+.datepicker table tr td.range.day.disabled:hover {
+    color: #8a98eb;
+    background: #324cdd;
+}
+
+.datepicker table tr td.range.highlighted.focused {
+    background: #cbd3da;
+}
+
+.datepicker table tr td.range.highlighted.disabled,
+.datepicker table tr td.range.highlighted.disabled:active {
+    color: #dee2e6;
+    background: #e9ecef;
+}
+
+.datepicker table tr td.range.today.disabled,
+.datepicker table tr td.range.today.disabled:active {
+    color: #fff;
+    background: #5e72e4;
+}
+
+.datepicker table tr td.day.range-start {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.datepicker table tr td.day.range-end {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.datepicker table tr td.day.range-start.range-end {
+    border-radius: 50%;
+}
+
+.datepicker table tr td.selected,
+.datepicker table tr td.selected.highlighted,
+.datepicker table tr td.selected:hover,
+.datepicker table tr td.selected.highlighted:hover,
+.datepicker table tr td.day.range:hover {
+    color: #fff;
+    background: #5e72e4;
+}
+
+.datepicker table tr td.active,
+.datepicker table tr td.active.highlighted,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active.highlighted:hover {
+    color: #fff;
+    background: #5e72e4;
+    box-shadow: none;
+}
+
+.datepicker table tr td span {
+    line-height: 54px;
+    display: block;
+    float: left;
+    width: 23%;
+    height: 54px;
+    margin: 1%;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.datepicker table tr td span:hover,
+.datepicker table tr td span.focused {
+    background: #e9ecef;
+}
+
+.datepicker table tr td span.disabled,
+.datepicker table tr td span.disabled:hover {
+    cursor: default;
+    color: #dee2e6;
+    background: none;
+}
+
+.datepicker table tr td span.active,
+.datepicker table tr td span.active:hover,
+.datepicker table tr td span.active.disabled,
+.datepicker table tr td span.active.disabled:hover {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+}
+
+.datepicker table tr td span.old,
+.datepicker table tr td span.new {
+    color: #8898aa;
+}
+
+.datepicker .datepicker-switch {
+    width: 145px;
+}
+
+.datepicker .datepicker-switch,
+.datepicker .prev,
+.datepicker .next,
+.datepicker tfoot tr th {
+    cursor: pointer;
+}
+
+.datepicker .datepicker-switch:hover,
+.datepicker .prev:hover,
+.datepicker .next:hover,
+.datepicker tfoot tr th:hover {
+    background: #e9ecef;
+}
+
+.datepicker .prev.disabled,
+.datepicker .next.disabled {
+    visibility: hidden;
+}
+
+.datepicker .cw {
+    font-size: 10px;
+    width: 12px;
+    padding: 0 2px 0 5px;
+    vertical-align: middle;
+}
+
+
+/* ************
+     New Custom css
+************ */
+
+.checklist-item {
+    position: relative;
+    display: flex;
+    padding-left: .75rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checklist-item:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    content: '';
+    border-radius: 8px;
+    background-color: #5e72e4;
+}
+
+.checklist-item-checked .checklist-info * {
+    text-decoration: line-through;
+}
+
+.checklist-item-primary:before {
+    background-color: #5e72e4;
+}
+
+.checklist-item-secondary:before {
+    background-color: #f7fafc;
+}
+
+.checklist-item-success:before {
+    background-color: #2dce89;
+}
+
+.checklist-item-info:before {
+    background-color: #11cdef;
+}
+
+.checklist-item-warning:before {
+    background-color: #fb6340;
+}
+
+.checklist-item-danger:before {
+    background-color: #f5365c;
+}
+
+.checklist-item-light:before {
+    background-color: #adb5bd;
+}
+
+.checklist-item-dark:before {
+    background-color: #212529;
+}
+
+.checklist-item-default:before {
+    background-color: #172b4d;
+}
+
+.checklist-item-white:before {
+    background-color: #fff;
+}
+
+.checklist-item-neutral:before {
+    background-color: #fff;
+}
+
+.checklist-item-darker:before {
+    background-color: black;
+}
+
+.mddd.nav-link:hover,
+.mddd.nav-link,
+.mddd.nav-link.active {
+    color: #051C4B !important;
+}
+
+.datepicker {
+    border-radius: .375rem;
+    direction: ltr;
+}
+
+.datepicker-inline {
+    width: 220px;
+}
+
+.datepicker-rtl {
+    direction: rtl;
+}
+
+.datepicker-rtl.dropdown-menu {
+    left: auto;
+}
+
+.datepicker-rtl table tr td span {
+    float: right;
+}
+
+.datepicker-dropdown {
+    top: 0;
+    left: 0;
+    padding: 20px 22px;
+    box-shadow: 0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1);
+}
+
+.datepicker-dropdown.datepicker-orient-left:before {
+    left: 6px;
+}
+
+.datepicker-dropdown.datepicker-orient-left:after {
+    left: 7px;
+}
+
+.datepicker-dropdown.datepicker-orient-right:before {
+    right: 6px;
+}
+
+.datepicker-dropdown.datepicker-orient-right:after {
+    right: 7px;
+}
+
+.datepicker-dropdown.datepicker-orient-bottom:before {
+    top: -7px;
+}
+
+.datepicker-dropdown.datepicker-orient-bottom:after {
+    top: -6px;
+}
+
+.datepicker-dropdown.datepicker-orient-top:before {
+    bottom: -7px;
+    border-top: 7px solid white;
+    border-bottom: 0;
+}
+
+.datepicker-dropdown.datepicker-orient-top:after {
+    bottom: -6px;
+    border-top: 6px solid #fff;
+    border-bottom: 0;
+}
+
+.datepicker table {
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.datepicker table tr td {
+    border-radius: 50%;
+}
+
+.datepicker table tr th {
+    font-weight: 500;
+    border-radius: .375rem;
+}
+
+.datepicker table tr td,
+.datepicker table tr th {
+    font-size: .875rem;
+    width: 36px;
+    height: 36px;
+    transition: all .15s ease;
+    text-align: center;
+    border: none;
+}
+
+.table-striped .datepicker table tr td,
+.table-striped .datepicker table tr th {
+    background-color: transparent;
+}
+
+.datepicker table tr td.old,
+.datepicker table tr td.new {
+    color: #adb5bd;
+}
+
+.datepicker table tr td.day:hover,
+.datepicker table tr td.focused {
+    cursor: pointer;
+    background: white;
+}
+
+.datepicker table tr td.disabled,
+.datepicker table tr td.disabled:hover {
+    cursor: default;
+    color: #dee2e6;
+    background: none;
+}
+
+.datepicker table tr td.highlighted {
+    border-radius: 0;
+}
+
+.datepicker table tr td.highlighted.focused {
+    background: #5e72e4;
+}
+
+.datepicker table tr td.highlighted.disabled,
+.datepicker table tr td.highlighted.disabled:active {
+    color: #ced4da;
+    background: #5e72e4;
+}
+
+.datepicker table tr td.today {
+    background: white;
+}
+
+.datepicker table tr td.today.focused {
+    background: white;
+}
+
+.datepicker table tr td.today.disabled,
+.datepicker table tr td.today.disabled:active {
+    color: #8898aa;
+    background: white;
+}
+
+.datepicker table tr td.range {
+    color: #fff;
+    border-radius: 0;
+    background: #5e72e4;
+}
+
+.datepicker table tr td.range.focused {
+    background: #3b53de;
+}
+
+.datepicker table tr td.range.disabled,
+.datepicker table tr td.range.disabled:active,
+.datepicker table tr td.range.day.disabled:hover {
+    color: #8a98eb;
+    background: #324cdd;
+}
+
+.datepicker table tr td.range.highlighted.focused {
+    background: #cbd3da;
+}
+
+.datepicker table tr td.range.highlighted.disabled,
+.datepicker table tr td.range.highlighted.disabled:active {
+    color: #dee2e6;
+    background: #e9ecef;
+}
+
+.datepicker table tr td.range.today.disabled,
+.datepicker table tr td.range.today.disabled:active {
+    color: #fff;
+    background: #5e72e4;
+}
+
+.datepicker table tr td.day.range-start {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.datepicker table tr td.day.range-end {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.datepicker table tr td.day.range-start.range-end {
+    border-radius: 50%;
+}
+
+.datepicker table tr td.selected,
+.datepicker table tr td.selected.highlighted,
+.datepicker table tr td.selected:hover,
+.datepicker table tr td.selected.highlighted:hover,
+.datepicker table tr td.day.range:hover {
+    color: #fff;
+    background: #5e72e4;
+}
+
+.datepicker table tr td.active,
+.datepicker table tr td.active.highlighted,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active.highlighted:hover {
+    color: #fff;
+    background: #5e72e4;
+    box-shadow: none;
+}
+
+.datepicker table tr td span {
+    line-height: 54px;
+    display: block;
+    float: left;
+    width: 23%;
+    height: 54px;
+    margin: 1%;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.datepicker table tr td span:hover,
+.datepicker table tr td span.focused {
+    background: #e9ecef;
+}
+
+.datepicker table tr td span.disabled,
+.datepicker table tr td span.disabled:hover {
+    cursor: default;
+    color: #dee2e6;
+    background: none;
+}
+
+.datepicker table tr td span.active,
+.datepicker table tr td span.active:hover,
+.datepicker table tr td span.active.disabled,
+.datepicker table tr td span.active.disabled:hover {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+}
+
+.datepicker table tr td span.old,
+.datepicker table tr td span.new {
+    color: #8898aa;
+}
+
+.datepicker .datepicker-switch {
+    width: 145px;
+}
+
+.datepicker .datepicker-switch,
+.datepicker .prev,
+.datepicker .next,
+.datepicker tfoot tr th {
+    cursor: pointer;
+}
+
+.datepicker .datepicker-switch:hover,
+.datepicker .prev:hover,
+.datepicker .next:hover,
+.datepicker tfoot tr th:hover {
+    background: #e9ecef;
+}
+
+.datepicker .prev.disabled,
+.datepicker .next.disabled {
+    visibility: hidden;
+}
+
+.datepicker .cw {
+    font-size: 10px;
+    width: 12px;
+    padding: 0 2px 0 5px;
+    vertical-align: middle;
+}
+
+.nav-link:hover {
+    color: inherit !important;
+}
+
+.div-mega>ul.navbar-nav>li.nav-item>a:hover {
+    color: #fff !important;
+}
+
+.nav-link.active {
+    color: #fff;
+}
+
+span.break-all {
+    white-space: break-spaces;
+}
+
+.dataTable {
+    width: 99% !important;
+}
+
+.view-icon i,
+.edit-icon i,
+.delete-icon i,
+.send-icon i {
+    color: #fff;
+    font-size: 10px;
+    line-height: 25px;
+}
+
+.view-icon,
+.edit-icon,
+.delete-icon {
+    background: #ef3939;
+    border-radius: 6px;
+    width: 25px;
+    line-height: 25px;
+    height: 25px;
+    text-align: center;
+    padding: 3px 7px;
+}
+
+.view-icon {
+    margin-right: 6px;
+    background: #46b8da;
+}
+
+.edit-icon,
+.send-icon {
+    margin-right: 6px;
+    background: #0f5ef7;
+}
+
+.send-icon {
+    float: left;
+    background: #00B8D9;
+    border-radius: 6px;
+    width: 25px;
+    line-height: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+.bg-255ef7 {
+    background-color: #255ef7;
+}
+
+.product_barcode_hight_de div {
+    height: 20px !important;
+}
+
+.select-warning {
+    display: block;
+    text-align: center;
+    background: #ffab2b1a;
+    color: #FFAB2B;
+    font-size: 13px;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+.select2-container .select2-search {
+    display: none;
+}
+
+.select2-container .select2-selection--single {
+    border-radius: 0.25rem;
+    height: 40px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 18px;
+}
+
+.calendar-table table tbody tr td,
+.calendar-table table thead tr th {
+    padding: 5px;
+}
+
+.calendar td,
+.calendar th {
+    border-color: #f6f8fa;
+}
+
+.calendar-table table {
+    margin-bottom: 0 !important;
+}
+
+.daterangepicker td.active {
+    background: #0f5ef7;
+}
+
+.daterangepicker.dropdown-menu {
+    z-index: 99999 !important;
+}
+
+.search_vendor_merge_input .form-control,
+.search_vendor_merge_input .form-control {
+    height: 42px;
+}
+
+.search_vendor_merge_input .input-group-text {
+    padding: 0 15px;
+}
+
+.custom-file-label1 {
+    background-color: #255EF7;
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 6px 15px;
+    border-radius: 5px;
+}
+
+.nav.nav-tabs li a {
+    font-weight: bold;
+    color: #0f5ef7;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.nav.nav-tabs {
+    border: 1px solid #0f5ef7;
+    border-radius: 10px;
+}
+
+.nav.nav-tabs li a.active {
+    background: #0f5ef7;
+    color: white;
+}
+
+.language-listt .nav-link.active {
+    background-color: #0f5ef7;
+    color: #fff;
+}
+
+.small-title {
+    padding: 15px;
+    border: 15px;
+    font-size: 20px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 49px rgba(105, 105, 105, 0.09);
+}
+
+.logo-content {
+    background: #eaeaea;
+    border-radius: 20px;
+    padding: 15px 30px;
+    height: 100px;
+}
+
+.big-logo,
+.small-logo,
+.logo_white {
+    max-height: 60px;
+}
+
+.card.setting-card {
+    padding: 30px 15px;
+}
+
+.setting-logo-box {
+    min-height: 258px !important;
+}
+
+.img_setting {
+    filter: drop-shadow(2px 3px 7px #011c4b);
+}
+
+.bg-grey {
+    background-color: #f1f1f12e;
+}
+
+.calendar_boder_radias {
+    background-color: #051c4b;
+    border-radius: 5px;
+}
+
+.modal-footer {
+    border-top: 0;
+    padding: 0;
+}
+
+.checklist-item {
+    position: relative;
+    display: flex;
+    padding-left: .75rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checklist-item:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    content: '';
+    border-radius: 8px;
+    background-color: #5e72e4;
+}
+
+.checklist-item-checked .checklist-info * {
+    text-decoration: line-through;
+}
+
+.checklist-item-primary:before {
+    background-color: #5e72e4;
+}
+
+.checklist-item-secondary:before {
+    background-color: #f7fafc;
+}
+
+.checklist-item-success:before {
+    background-color: #2dce89;
+}
+
+.checklist-item-info:before {
+    background-color: #11cdef;
+}
+
+.checklist-item-warning:before {
+    background-color: #fb6340;
+}
+
+.checklist-item-danger:before {
+    background-color: #f5365c;
+}
+
+.checklist-item-light:before {
+    background-color: #adb5bd;
+}
+
+.checklist-item-dark:before {
+    background-color: #212529;
+}
+
+.checklist-item-default:before {
+    background-color: #172b4d;
+}
+
+.checklist-item-white:before {
+    background-color: #fff;
+}
+
+.checklist-item-neutral:before {
+    background-color: #fff;
+}
+
+.checklist-item-darker:before {
+    background-color: black;
+}
+
+.bg-default {
+    background-color: #d6ddea;
+}
+
+#branchModal select.form-control {
+    height: 43px;
+}
+
+.download_btn {
+    position: absolute;
+    right: 0;
+    top: -50px;
+}

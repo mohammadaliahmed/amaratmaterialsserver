@@ -1,0 +1,6 @@
+/public/hot
+/public/storage
+/storage
+.env
+/vendor
+./.well-known
