@@ -177,7 +177,7 @@ class AppController extends Controller
 
     }
 
-    public function MyOrders($id)
+    public function MyOrders(Request  $request)
     {
         $sales = Sale::where('customer_id', $request->userId)
             ->where('created_at','>=',$request->start_date.' 00:00:00')

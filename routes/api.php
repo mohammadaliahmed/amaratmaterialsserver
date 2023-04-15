@@ -28,7 +28,8 @@ Route::post('editSite', [\App\Http\Controllers\AppController::class,'EditSite'])
 Route::post('updateProfile', [\App\Http\Controllers\AppController::class,'UpdateProfile']);
 Route::get('deleteSite/{id}', [\App\Http\Controllers\AppController::class,'DeleteSite']);
 Route::get('products', [\App\Http\Controllers\AppController::class,'ListProducts']);
-Route::post('myOrders/', [\App\Http\Controllers\AppController::class,'MyOrders']);Route::get('orderItems/{id}', [\App\Http\Controllers\AppController::class,'OrderItems']);
+Route::post('myOrders/', [\App\Http\Controllers\AppController::class,'MyOrders']);
+Route::get('orderItems/{id}', [\App\Http\Controllers\AppController::class,'OrderItems']);
 Route::get('getCustomer/{id}', [\App\Http\Controllers\AppController::class,'GetCustomer']);
 Route::get('category/{id}', [\App\Http\Controllers\AppController::class,'CategoryProducts']);
 Route::get('categories/', [\App\Http\Controllers\AppController::class,'Categories']);
