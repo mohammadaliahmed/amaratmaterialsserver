@@ -228,6 +228,7 @@ class SaleController extends Controller
 
     public function edit(Sale $sale)
     {
+
         return redirect()->back()->with('error', __('Permission denied.'));
     }
 

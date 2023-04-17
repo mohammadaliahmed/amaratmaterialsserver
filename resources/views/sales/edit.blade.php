@@ -95,7 +95,7 @@
                     <div class="row">
                         <div class="col-lg-12 text-right">
                             {{ Form::submit(__('Save Change'), ['class' => 'btn btn-primary float-end']) }}
-                        </div>  
+                        </div>
                     </div>
 
                     {{ Form::close() }}
