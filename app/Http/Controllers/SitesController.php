@@ -112,8 +112,8 @@ class SitesController extends Controller
     public function destroy(Sites $site)
     {
         //
-        $site->delete();
-
-        return redirect()->back()->with('success', __('Site successfully deleted.'));
+//        $site->delete();
+//
+//        return redirect()->back()->with('success', __('Site successfully deleted.'));
     }
 }
