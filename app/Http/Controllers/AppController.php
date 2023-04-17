@@ -87,8 +87,10 @@ class AppController extends Controller
         }
 
     }
-    public function GeLocations(){
-        $Locations=Locations::with('subLocations')->get();
+
+    public function GeLocations()
+    {
+        $Locations = Locations::with('subLocations')->get();
         return response()->json([
             'code' => Response::HTTP_OK, 'message' => "", 'locations' => $Locations
         ], Response::HTTP_OK);
@@ -138,7 +140,7 @@ class AppController extends Controller
         CustomerOrdersTimeline::create([
             'sale_id' => $sale->id,
             'order_status' => 0,
-            'updated_by' =>  1,
+            'updated_by' => 1,
         ]);
 //
         foreach ($request->items as $key => $value) {
@@ -164,7 +166,7 @@ class AppController extends Controller
         $subject = "Order Confirmation";
         $customer = Customer::find($request->userId);
 
-        Mail::later(5,'emails.testmail', compact('sale'), function ($message) use (
+        Mail::later(5, 'emails.testmail', compact('sale'), function ($message) use (
             $customer, $sale, $subject
         ) {
             $message->from('info@amaratmaterials.com', 'Amarat Materials');
@@ -177,12 +179,18 @@ class AppController extends Controller
 
     }
 
-    public function MyOrders(Request  $request)
+    public function MyOrders(Request $request)
     {
         $sales = Sale::where('customer_id', $request->userId)
-            ->where('created_at','>=',$request->start_date.' 00:00:00')
-            ->where('created_at','<=',$request->end_date.' 00:00:00')
-            ->orderBy('id', 'desc')->with('site')->with('items')
+            ->where('created_at', '>=', $request->start_date . ' 00:00:00')
+            ->where('created_at', '<=', $request->end_date . ' 00:00:00');
+        if ($request->site_id>0) {
+            $sales->where('site_id',$request->site_id);
+        }
+
+        $sales->orderBy('id', 'desc')
+            ->with('site')
+            ->with('items')
             ->with('customerOrdersTimeline')
             ->get();
 
