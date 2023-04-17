@@ -181,14 +181,17 @@ class AppController extends Controller
 
     public function MyOrders(Request $request)
     {
+
         $sales = Sale::where('customer_id', $request->userId)
             ->where('created_at', '>=', $request->start_date . ' 00:00:00')
             ->where('created_at', '<=', $request->end_date . ' 00:00:00');
-        if ($request->site_id>0) {
-            $sales->where('site_id',$request->site_id);
+        if (isset($request->site_id)) {
+
+//            dd($request->site_id);
+            $sales=$sales->where('site_id',$request->site_id);
         }
 
-        $sales->orderBy('id', 'desc')
+        $sales=$sales->orderBy('id', 'desc')
             ->with('site')
             ->with('items')
             ->with('customerOrdersTimeline')
