@@ -89,7 +89,7 @@
 {{--                                {{$order->purchase}}--}}
                                 @isset($order->purchase)
                                     <div class="action-btn btn-dark ms-2">
-                                        <a href="{{ route('get.purchased.invoice',Crypt::encrypt($order->purchase->invoice_id)) }}" target="_blank" class="mx-3 btn btn-sm d-inline-flex align-items-center " data-bs-toggle="tooltip"  data-title="Download"    title="Download Purchase Invoice"><i class="ti ti-arrow-bar-to-down text-white"></i></a>
+                                        <a href="{{ route('get.purchased.invoice',$order->purchase->id) }}" target="_blank" class="mx-3 btn btn-sm d-inline-flex align-items-center " data-bs-toggle="tooltip"  data-title="Download"    title="Download Purchase Invoice"><i class="ti ti-arrow-bar-to-down text-white"></i></a>
                                     </div>
                                 @endisset
 

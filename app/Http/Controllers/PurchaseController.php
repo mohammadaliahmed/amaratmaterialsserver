@@ -389,8 +389,9 @@ class PurchaseController extends Controller
 
     public function printPurchaseInvoice($id)
     {
-        $purchase_id = Crypt::decrypt($id);
-        $purchase    = Purchase::findOrFail($purchase_id);
+//        dd($id);
+//        $purchase_id = Crypt::decrypt($id);
+        $purchase    = Purchase::findOrFail($id);
 
         if ($purchase) {
             $user = User::select('*')->where('id', $purchase->created_by)->first();
