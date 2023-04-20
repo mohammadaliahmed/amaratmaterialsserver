@@ -162,7 +162,7 @@ class ReportController extends Controller
             $sale = Sale::find($sale_id);
             $user_id = Auth::user()->getCreatedBy();
 
-            $customers = Customer::where('created_by', $user_id)->pluck('name', 'id');
+            $customers = Customer::pluck('name', 'id');
             $customers->prepend(__('Walk-in Customers'), 0);
 
             return view('sales.edit', compact('sale', 'customers'));
