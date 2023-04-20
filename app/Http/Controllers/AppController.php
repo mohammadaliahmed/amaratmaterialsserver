@@ -184,7 +184,7 @@ class AppController extends Controller
 
         $sales = Sale::where('customer_id', $request->userId)
             ->where('created_at', '>=', $request->start_date . ' 00:00:00')
-            ->where('created_at', '<=', $request->end_date . ' 00:00:00');
+            ->where('created_at', '<=', $request->end_date . ' 23:59:59');
         if ($request->site_id>0) {
             $sales=$sales->where('site_id',$request->site_id);
         }
