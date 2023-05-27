@@ -18,5 +18,7 @@ class Sites extends Model
         'near',
         'latitude',
         'longitude',
+        'contact_name',
+        'contact_phone',
     ];
 }

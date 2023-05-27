@@ -279,6 +279,7 @@ class ReportController extends Controller
                 $vendorOrders=$vendorOrders->groupBy('vendor_id')
                     ->get();
 
+
                 return view('reports.vendorReport', compact('vendors',
                     'vendorOrders', 'start_date', 'end_date'));
 
@@ -298,9 +299,7 @@ class ReportController extends Controller
                     ->groupBy('vendor_id')
                     ->get();
 
-
-
-
+                dd($vendorOrders);
                 return view('reports.vendorReport', compact('vendors',
                     'vendorOrders', 'start_date', 'end_date'));
 

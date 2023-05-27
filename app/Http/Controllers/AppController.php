@@ -185,11 +185,11 @@ class AppController extends Controller
         $sales = Sale::where('customer_id', $request->userId)
             ->where('created_at', '>=', $request->start_date . ' 00:00:00')
             ->where('created_at', '<=', $request->end_date . ' 23:59:59');
-        if ($request->site_id>0) {
-            $sales=$sales->where('site_id',$request->site_id);
+        if ($request->site_id > 0) {
+            $sales = $sales->where('site_id', $request->site_id);
         }
 
-        $sales=$sales->orderBy('id', 'desc')
+        $sales = $sales->orderBy('id', 'desc')
             ->with('site')
             ->with('items')
             ->with('customerOrdersTimeline')
@@ -223,6 +223,8 @@ class AppController extends Controller
             'customer_id' => $request->userId,
             'latitude' => $request->latitude,
             'longitude' => $request->longitude,
+            'contact_name' => $request->contactName,
+            'contact_phone' => $request->contactPhone,
         ]);
         return response()->json([
             'code' => Response::HTTP_OK, 'message' => "success",
@@ -247,6 +249,8 @@ class AppController extends Controller
         $site->name = $request->name;
         $site->latitude = $request->latitude;
         $site->longitude = $request->longitude;
+        $site->contact_name = $request->contactName;
+        $site->contact_phone = $request->contactPhone;
 
         return response()->json([
             'code' => Response::HTTP_OK, 'message' => "success",
