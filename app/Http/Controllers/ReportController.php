@@ -299,7 +299,7 @@ class ReportController extends Controller
                     ->groupBy('vendor_id')
                     ->get();
 
-                dd($vendorOrders);
+//                dd($vendorOrders);
                 return view('reports.vendorReport', compact('vendors',
                     'vendorOrders', 'start_date', 'end_date'));
 
@@ -880,6 +880,7 @@ class ReportController extends Controller
             $data['branch_id'] = $request->has('branch_id') ? $request->input('branch_id') : '-1';
             $data['cash_register_id'] = $request->has('cash_register_id') ? $request->input('cash_register_id') : '-1';
             $data['customer_id'] = $request->has('customer_id') ? $request->input('customer_id') : '-1';
+
 
             $data = Customer::getCustomerSalesAnalysis($data);
 
