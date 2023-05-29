@@ -515,7 +515,7 @@ class ReportController extends Controller
                 if (isset($site)) {
                     $invoicearray[$key]['site'] =
 //                    '<a href="#"  class="m-2 btn btn-sm d-inline-flex align-items-center bg-primary" ><i class="ti ti-eye text-white"></i></a>'.
-                        'H#' . $site->house . ", St#" . $site->street . ', Sec#' . $site->sector;
+                        'H#' . $site->house . ", St#" . $site->street . ', Sec#' . $site->sector.'<br>N: '.$site->contact_name.', P: '.$site->contact_phone;
                 } else {
                     $invoicearray[$key]['site'] = "";
                 }

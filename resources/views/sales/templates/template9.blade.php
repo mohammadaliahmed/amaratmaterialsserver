@@ -534,10 +534,12 @@
                                                     {{ $detail }} <br>
                                                 @endforeach
                                                 @if(isset($sale->site))
-                                                        <strong>Site</strong>
+                                                        <strong>Site: </strong>
 
 
                                                         H# {{$sale->site->house}}, St# {{$sale->site->street}}, Sec# {{$sale->site->sector}}
+                                                    <br>
+                                                        Name: {{$sale->site->contact_name}}<br>Phone: {{$sale->site->contact_phone}}
 
                                                     @endif
                                                @else
