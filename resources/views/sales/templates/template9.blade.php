@@ -588,7 +588,7 @@
                                                     <div class="d-table-tr" style="border-bottom:1px solid {{($color == '#ffffff') ? 'black': $color}};">
                                                         <div class="d-table-td w-2"><span>{{ $key+1 }}</span></div>
                                                         <div class="d-table-td w-8">
-                                                            <span data-v-f2a183a6="">{{ $item->name }}</span>
+                                                            <span data-v-f2a183a6="">{{ $item->name }}<br>{{$item->variation}}</span>
                                                         </div>
                                                         <div class="d-table-td w-3">
                                                             <span data-v-f2a183a6="">{{ $item->quantity }}</span>

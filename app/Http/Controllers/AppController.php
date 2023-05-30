@@ -149,6 +149,7 @@ class AppController extends Controller
             $selleditems = new SelledItems();
             $selleditems->sell_id = $sale->id;
             $selleditems->product_id = $key;
+            $selleditems->variation = $request->variation;
             $selleditems->price = $product->sale_price;
             $selleditems->quantity = $value;
             $selleditems->tax_id = 0;

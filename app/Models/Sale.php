@@ -15,7 +15,8 @@ class Sale extends Model
         'branch_id',
         'cash_register_id',
         'created_by',
-        'site_id'
+        'site_id',
+
     ];
 
     public function customerOrdersTimeline()

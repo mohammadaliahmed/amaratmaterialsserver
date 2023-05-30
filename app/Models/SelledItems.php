@@ -13,7 +13,8 @@ class SelledItems extends Model
         'quantity',
         'tax_id',
         'tax',
-        'status'
+        'status',
+        'variation',
     ];
 
     public function product(){

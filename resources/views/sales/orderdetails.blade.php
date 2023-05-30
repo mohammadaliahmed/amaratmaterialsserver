@@ -29,6 +29,7 @@
                 <th scope="col">Product Name</th>
                 <th scope="col">Product Price</th>
                 <th scope="col">Quantity</th>
+                <th scope="col">Option</th>
                 <th scope="col">Assign</th>
                 <th scope="col">Action</th>
 
@@ -46,6 +47,7 @@
                     <td>{{$item->product->name}}</td>
                     <td>{{$item->product->sale_price}}</td>
                     <td>{{$item->quantity}}</td>
+                    <td>{{$item->variation}}</td>
                     <td><a class="btn btn-primary btn-sm m-2" href="{{route('sale.assign', $sale->id)}}">
                             Assign order
                         </a>
