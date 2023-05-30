@@ -143,15 +143,16 @@ class AppController extends Controller
             'updated_by' => 1,
         ]);
 //
+
         foreach ($request->items as $key => $value) {
             $product = Product::find($key);
             $product_id = $key;
             $selleditems = new SelledItems();
             $selleditems->sell_id = $sale->id;
             $selleditems->product_id = $key;
-            $selleditems->variation = $request->variation;
+            $selleditems->variation = $value['var'];
             $selleditems->price = $product->sale_price;
-            $selleditems->quantity = $value;
+            $selleditems->quantity = $value['qty'];
             $selleditems->tax_id = 0;
             $selleditems->tax = 0;
 
@@ -167,13 +168,13 @@ class AppController extends Controller
         $subject = "Order Confirmation";
         $customer = Customer::find($request->userId);
 
-        Mail::later(5, 'emails.testmail', compact('sale'), function ($message) use (
-            $customer, $sale, $subject
-        ) {
-            $message->from('info@amaratmaterials.com', 'Amarat Materials');
-            $message->subject($subject);
-            $message->to($customer->email);
-        });
+//        Mail::later(5, 'emails.testmail', compact('sale'), function ($message) use (
+//            $customer, $sale, $subject
+//        ) {
+//            $message->from('info@amaratmaterials.com', 'Amarat Materials');
+//            $message->subject($subject);
+//            $message->to($customer->email);
+//        });
         return response()->json([
             'code' => Response::HTTP_OK, 'message' => "success", 'sale' => $sale
         ], Response::HTTP_OK);
