@@ -1,22 +1,26 @@
 {{ Form::open(['url' => 'products', 'enctype' => 'multipart/form-data']) }}
 <div class="modal-body">
     <div class="row">
-        <div class="form-group col-md-12">
+        <div class="form-group col-md-6">
             {{ Form::label('name', __('Product Name'), ['class' => 'col-form-label']) }}
             {{ Form::text('name', null, ['class' => 'form-control', 'placeholder' => __('Enter new Product Name'), 'required' => '']) }}
         </div>
-        <div class="form-group col-md-12">
+        <div class="form-group col-md-6">
             {{ Form::label('urdu_title', __('Product Name in Urdu'), ['class' => 'col-form-label']) }}
             {{ Form::text('urdu_title', null, ['class' => 'form-control', 'placeholder' => __('Enter Product Name In Urdu'), 'required' => '']) }}
         </div>
-        <div class="form-group col-md-12">
+        <div class="form-group col-md-6">
             {{ Form::label('description', __('Description'), ['class' => 'col-form-label']) }}
             {!! Form::textarea('description', null, ['class' => 'form-control', 'placeholder' => __('Enter Product Description'), 'rows' => 3, 'style' => 'resize: none']) !!}
         </div>
 
-        <div class="form-group col-md-12">
+        <div class="form-group col-md-6">
             {{ Form::label('urdu_description', __('Urdu Description'), ['class' => 'col-form-label']) }}
             {!! Form::textarea('urdu_description', null, ['class' => 'form-control', 'placeholder' => __('Product Description in Urdu'), 'rows' => 3, 'style' => 'resize: none']) !!}
+        </div>
+        <div class="form-group col-md-12">
+            {{ Form::label('Product variation (comma separated)', __('Product variation (comma separated)'), ['class' => 'col-form-label']) }}
+            {{ Form::text('variations', null, ['class' => 'form-control', 'placeholder' => __('Enter Product variation'), 'required' => '']) }}
         </div>
 
         <div class="form-group col-md-12">

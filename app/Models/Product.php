@@ -27,6 +27,7 @@ class Product extends Model
         'unit_value',
         'created_by',
         'urdu_title',
+        'variation',
         'urdu_description'
 
     ];

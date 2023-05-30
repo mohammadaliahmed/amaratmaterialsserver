@@ -88,6 +88,7 @@ class ProductController extends Controller
             $product->moq = $request->moq;
             $product->unit_value = $request->unit_value;
             $product->sku = $request->sku;
+            $product->variations = $request->variations;
             $product->description = $request->description;
 
             if (!empty($request->input('category_id'))) {
@@ -202,6 +203,7 @@ class ProductController extends Controller
             $product->sale_price = $request->sale_price;
             $product->sku = $request->sku;
             $product->moq = $request->moq;
+            $product->variations = $request->variations;
             $product->unit_value = $request->unit_value;
             $product->description = $request->description;
             if (!empty($request->input('category_id'))) {

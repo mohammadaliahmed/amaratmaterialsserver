@@ -41,48 +41,28 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th class="w-25">{{ __('Name') }}</th>
-                                        <th >{{ __('Urdu Title') }}</th>
+                                        <th>{{ __('Action') }}</th>
+                                        <th >{{ __('Name') }}</th>
                                         <th>{{ __('Price') }}</th>
                                         <th>{{ __('Brand') }}</th>
                                         <th>{{ __('Category') }}</th>
+                                        <th>{{ __('Variations') }}</th>
 {{--                                        <th>{{ __('Barcode') }}</th>--}}
-                                        <th width="200px">{{ __('Action') }}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @foreach ($products as $key => $product)
                                         <tr>
                                             <td>{{ $key + 1 }}</td>
-                                            <td><span class="break-all">{{ $product->name }}</span></td>
-                                            <td>{{ $product->urdu_title }}</td>
-                                            <td>Rs {{ $product->sale_price }}</td>
-                                            <td>{{ $product->brandname }}</td>
-                                            <td>{{ $product->categoryname }}</td>
-
-{{--                                            <td>--}}
-{{--                                                @if ($product->getTotalProductQuantity() > \App\Models\Utility::settings()['low_product_stock_threshold'])--}}
-{{--                                                    <span--}}
-{{--                                                        class="badge bg-success p-2 px-3 rounded">{{ $product->getTotalProductQuantity() }}</span>--}}
-{{--                                                @else--}}
-{{--                                                    <span--}}
-{{--                                                        class="badge bg-danger p-2 px-3 rounded">{{ $product->getTotalProductQuantity() }}</span>--}}
-{{--                                                @endif--}}
-{{--                                            </td>--}}
-{{--                                            <td>--}}
-{{--                                                <div id="{{ $product->id }}"--}}
-{{--                                                    class="product_barcode product_barcode_hight_de"--}}
-{{--                                                    data-skucode="{{ $product->sku }}"></div>--}}
-{{--                                            </td>--}}
-                                            <td class="Action">
+                                            <td >
                                                 @can('Edit Product')
                                                     <div class="action-btn btn-info ms-2">
 
                                                         <a href="#" data-ajax-popup="true" data-bs-toggle="tooltip"
-                                                            data-title="{{ __('Edit Product') }}"
-                                                            title="{{ __('Edit Product') }}" data-size="lg"
-                                                            data-url="{{ route('products.edit', $product->id) }}"
-                                                            class="mx-3 btn btn-sm d-inline-flex align-items-center edit-product">
+                                                           data-title="{{ __('Edit Product') }}"
+                                                           title="{{ __('Edit Product') }}" data-size="lg"
+                                                           data-url="{{ route('products.edit', $product->id) }}"
+                                                           class="mx-3 btn btn-sm d-inline-flex align-items-center edit-product">
                                                             <i class="ti ti-pencil text-white" title="{{ __('Edit') }}"></i>
                                                         </a>
                                                     </div>
@@ -90,18 +70,26 @@
                                                 @can('Delete Product')
                                                     <div class="action-btn bg-danger ms-2">
                                                         <a href="#"
-                                                            class="bs-pass-para mx-3 btn btn-sm d-inline-flex align-items-center"
-                                                            data-toggle="sweet-alert" data-confirm="{{ __('Are You Sure?') }}"
-                                                            data-text="{{ __('This action can not be undone. Do you want to continue?') }}"
-                                                            data-confirm-yes="delete-form-{{ $product->id }}"
-                                                            data-bs-toggle="tooltip" title="{{ __('Delete') }}">
+                                                           class="bs-pass-para mx-3 btn btn-sm d-inline-flex align-items-center"
+                                                           data-toggle="sweet-alert" data-confirm="{{ __('Are You Sure?') }}"
+                                                           data-text="{{ __('This action can not be undone. Do you want to continue?') }}"
+                                                           data-confirm-yes="delete-form-{{ $product->id }}"
+                                                           data-bs-toggle="tooltip" title="{{ __('Delete') }}">
                                                             <i class="ti ti-trash text-white"></i>
                                                         </a>
 
-                                                        {!! Form::open(['method' => 'DELETE', 'route' => ['products.destroy', $product->id], 'id' => 'delete-form-' . $product->id]) !!}
-                                                        {!! Form::close() !!}
-                                                    @endcan
+                                                    {!! Form::open(['method' => 'DELETE', 'route' => ['products.destroy', $product->id], 'id' => 'delete-form-' . $product->id]) !!}
+                                                    {!! Form::close() !!}
+                                                @endcan
                                             </td>
+                                            <td >{{ $product->name }}<br>{{ $product->urdu_title }}</td>
+                                            <td>Rs {{ $product->sale_price }}</td>
+                                            <td>{{ $product->brandname }}</td>
+                                            <td>{{ $product->categoryname }}</td>
+                                            <td>{{ $product->variations }}</td>
+
+
+
                                         </tr>
                                     @endforeach
                                 </tbody>
