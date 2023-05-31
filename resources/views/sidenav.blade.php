@@ -194,6 +194,29 @@
 
                             <li class="dash-item dash-hasmenu">
                                 <a href="#" class="dash-link"><span class="dash-micon"><i
+                                            class="ti ti-list"></i></span><span
+                                        class="dash-mtext">Ledger</span><span class="dash-arrow"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-chevron-right"><polyline
+                                                points="9 18 15 12 9 6"></polyline></svg></span></a>
+
+
+                                <ul class="dash-submenu" style="display: none;">
+
+                                    <li class="dash-item dash-hasmenu">
+                                        <a class="dash-link" href="{{ route('locations') }}">Vendor Ledger</a>
+                                    </li>
+                                    <li class="dash-item dash-hasmenu">
+                                        <a class="dash-link" href="{{ route('locations') }}">Customer Ledger</a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+                            <li class="dash-item dash-hasmenu">
+                                <a href="#" class="dash-link"><span class="dash-micon"><i
                                             class="ti ti-pin"></i></span><span
                                         class="dash-mtext">Locations</span><span class="dash-arrow"><svg
                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24"

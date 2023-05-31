@@ -65,10 +65,17 @@
                                         <td>{{ $customer->email }}</td>
                                         <td>{{ Auth::user()->datetimeFormat($customer->created_at) }}</td>
                                         <td class="Action">
-                                            <div class="action-btn btn-secondary ms-2">
-                                                <a href="{{ route('customers.show', $customer->id) }}"
+                                            <div class="action-btn btn-warning ms-2">
+                                                <a href="{{ route('ledger.customer', $customer->id) }}"
                                                    class="mx-3 btn btn-sm d-inline-flex align-items-center"
                                                 >
+                                                    <i class="ti ti-list text-white"></i>
+
+                                                </a>
+                                            </div>
+                                            <div class="action-btn btn-secondary ms-2">
+                                                <a href="{{ route('customers.show', $customer->id) }}"
+                                                   class="mx-3 btn btn-sm d-inline-flex align-items-center">
                                                     <i class="ti ti-eye text-white"></i>
 
                                                 </a>
@@ -107,8 +114,11 @@
                                                 <a href="#" class="btn btn-danger btn-sm">
                                                     <i class="fa fa-lock"></i>
                                                 </a>
+
                                             @endif
+
                                         </td>
+
                                     </tr>
                                 @endforeach
                                 </tbody>

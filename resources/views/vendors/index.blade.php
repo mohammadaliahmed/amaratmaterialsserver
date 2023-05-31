@@ -69,6 +69,14 @@
                                             <td class="Action">
                                                 @if ($vendor->is_active == 1)
                                                     @can('Edit Vendor')
+                                                        <div class="action-btn btn-warning ms-2">
+                                                            <a href="{{ route('ledger.vendor', $vendor->id) }}"
+                                                               class="mx-3 btn btn-sm d-inline-flex align-items-center"
+                                                            >
+                                                                <i class="ti ti-list text-white"></i>
+
+                                                            </a>
+                                                        </div>
                                                         <div class="action-btn btn-info ms-2">
                                                             <a href="#" data-ajax-popup="true"
                                                                 data-title="{{ __('Edit Vendor') }}"
@@ -79,6 +87,7 @@
                                                                 <i class="ti ti-pencil text-white"></i>
                                                             </a>
                                                         </div>
+
                                                     @endcan
                                                     @can('Delete Vendor')
                                                         <div class="action-btn bg-danger ms-2">

@@ -126,6 +126,20 @@ Route::get('reports/vendor', 'ReportController@vendorReport')->name('reports.ven
 Route::post('reports/vendor', 'ReportController@vendorReport')->name('reports.vendor')->middleware(['auth', 'XSS']);
 
 
+Route::get('ledger/customer/{id}', 'LedgerController@getCustomerLedger')->name('ledger.customer')
+    ->middleware(['auth', 'XSS']);
+
+Route::post('ledger/customer/{id}', 'LedgerController@getCustomerLedger')
+    ->middleware(['auth', 'XSS']);
+
+Route::get('ledger/vendor/{id}', 'LedgerController@getVendorLedger')->name('ledger.vendor')
+    ->middleware(['auth', 'XSS']);
+
+Route::post('ledger/vendor/{id}', 'LedgerController@getVendorLedger')
+    ->middleware(['auth', 'XSS']);
+
+
+
 Route::get('product-stock-analysis', 'ReportController@productStockAnalysisView')->name('product.stock.analysis')->middleware(['auth', 'XSS']);
 Route::get('filter-stock-analysis', 'ReportController@productStockAnalysisFilter')->name('product.stock.analysis.filter')->middleware(['auth', 'XSS']);
 
