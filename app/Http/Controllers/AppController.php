@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Customer;
+use App\Models\CustomerLedger;
 use App\Models\CustomerOrderedProductTimeLine;
 use App\Models\CustomerOrdersTimeline;
 use App\Models\Locations;
@@ -13,6 +14,7 @@ use App\Models\SelledItems;
 use App\Models\Sites;
 use App\Models\Unit;
 use App\Models\Utility;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
@@ -165,8 +167,23 @@ class AppController extends Controller
             ]);
         }
 
+        //addledger
+        $currentDate = Carbon::now()->format('m/d/Y');
+
+        $date = Carbon::createFromFormat('m/d/Y', $currentDate)->format('Y-m-d');
+
+        CustomerLedger::create([
+            'amount' => $sale->getTotal(),
+            'type' => 'debit',
+            'message' => 'New sale of Rs '.$sale->getTotal(),
+            'date' => $date,
+            'customer_id' => $request->userId,
+
+        ]);
+
         $subject = "Order Confirmation";
         $customer = Customer::find($request->userId);
+
 
 //        Mail::later(5, 'emails.testmail', compact('sale'), function ($message) use (
 //            $customer, $sale, $subject

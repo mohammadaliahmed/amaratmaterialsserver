@@ -19,6 +19,7 @@ class LedgerController extends Controller
             CustomerLedger::create([
                 'amount' => $request->amount,
                 'type' => $request->type,
+                'message' => $request->message,
                 'date' => $date,
                 'customer_id' => $id,
 
@@ -44,6 +45,7 @@ class LedgerController extends Controller
             VendorLedger::create([
                 'amount' => $request->amount,
                 'type' => $request->type,
+                'message' => $request->message,
                 'date' => $date,
                 'vendor_id' => $id,
 

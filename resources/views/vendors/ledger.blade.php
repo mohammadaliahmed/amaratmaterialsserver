@@ -59,6 +59,13 @@
                                 <input type="number" name="amount" class="form-control" id="amount" step="10"
                                        required>
                             </div>
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <label>Message</label>
+                                    <input type="text" name="message" class="form-control" placeholder="Enter message"
+                                           required>
+                                </div>
+                            </div>
                             <div class="row">
                                 <div class="d-flex justify-content-center">
                                     <button class="btn btn-success w-25 m-3">Add</button>
@@ -81,6 +88,7 @@
                                 <tr>
                                     <th>Sr #</th>
                                     <th>{{ __('Date') }}</th>
+                                    <th>{{ __('Message') }}</th>
                                     <th>{{ __('Credit') }}</th>
                                     <th>{{ __('Debit') }}</th>
                                     <th>{{ __('Balance') }} </th>
@@ -98,6 +106,7 @@
                                     <tr>
                                         <td>{{$key}}</td>
                                         <td>{{ $entry->date }}</td>
+                                        <td>{{ $entry->message }}</td>
                                         @if ($entry->type === 'credit')
                                             <td class="credit">{{ $entry->amount }}</td>
                                             <td></td>

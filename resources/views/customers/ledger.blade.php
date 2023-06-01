@@ -43,7 +43,8 @@
                         <div class="row">
                             <div class="col-4">
                                 <label>Date</label>
-                                <input autocomplete="off"  type="text" name="date" required class="form-control" id="datepicker">
+                                <input autocomplete="off" type="text" name="date" required class="form-control"
+                                       id="datepicker">
                             </div>
                             <div class="col-4">
 
@@ -58,6 +59,13 @@
                                 <label>Amount</label>
                                 <input type="number" name="amount" class="form-control" id="amount" step="10"
                                        required>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <label>Message</label>
+                                    <input type="text" name="message" class="form-control" placeholder="Enter message"
+                                           required>
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="d-flex justify-content-center">
@@ -81,6 +89,7 @@
                                 <tr>
                                     <th>Sr #</th>
                                     <th>{{ __('Date') }}</th>
+                                    <th>{{ __('Message') }}</th>
                                     <th>{{ __('Credit') }}</th>
                                     <th>{{ __('Debit') }}</th>
                                     <th>{{ __('Balance') }} </th>
@@ -93,11 +102,12 @@
                                 @endphp
                                 @foreach ($ledgerEntries as $key=>$entry)
                                     @php
-                                    $key++;
+                                        $key++;
                                     @endphp
                                     <tr>
                                         <td>{{$key}}</td>
                                         <td>{{ $entry->date }}</td>
+                                        <td>{{ $entry->message }}</td>
                                         @if ($entry->type === 'credit')
                                             <td class="credit">{{ $entry->amount }}</td>
                                             <td></td>

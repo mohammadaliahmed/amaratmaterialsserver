@@ -11,6 +11,6 @@ class VendorLedger extends Model
     use HasFactory;
     protected $table='vendor_ledger';
     protected $fillable=[
-        'amount','type','date','vendor_id'
+        'amount','type','date','vendor_id','message'
     ];
 }

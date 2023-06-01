@@ -10,6 +10,6 @@ class CustomerLedger extends Model
     use HasFactory;
     protected $table='customer_ledger';
     protected $fillable=[
-        'amount','type','date','customer_id'
+        'amount','type','date','customer_id','message'
     ];
 }
