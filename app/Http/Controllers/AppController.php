@@ -172,10 +172,11 @@ class AppController extends Controller
 
         $date = Carbon::createFromFormat('m/d/Y', $currentDate)->format('Y-m-d');
 
+        $route='/orderDetail/'.$sale->id;
         CustomerLedger::create([
             'amount' => $sale->getTotal(),
             'type' => 'debit',
-            'message' => 'New sale of Rs '.$sale->getTotal(),
+            'message' => 'New <a href="$route">sale</a> of Rs '.$sale->getTotal(),
             'date' => $date,
             'customer_id' => $request->userId,
 
