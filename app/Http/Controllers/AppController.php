@@ -175,7 +175,7 @@ class AppController extends Controller
         CustomerLedger::create([
             'amount' => $sale->getTotal(),
             'type' => 'debit',
-            'message' => 'New sale ('.$sale->id.') of Rs '.$sale->getTotal(),
+            'message' => 'New sale (Id: '.$sale->id.') of Rs '.$sale->getTotal(),
             'date' => $date,
             'customer_id' => $request->userId,
 
